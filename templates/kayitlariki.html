@@ -1,0 +1,44 @@
+{% extends "layootuc.html" %}
+
+
+{%block Body%}  
+    {% if gonderimler %}
+        <table class="table table-hover" style="width:1600%;" >
+         <thead>
+           
+          <tr  style="font-size:8px;">
+            
+            <th  scope="col">Gönderim Numarası</th>
+            <th scope="col">Satıcı Kodu</th>
+            <th scope="col">Malzeme Numarası</th>
+            <th scope="col">Adet</th>
+            <th scope="col">Palet Sayısı</th>
+            <th scope="col">irsaliye Numarası</th>
+            <th scope="col">Teslim Günü</th>
+            <th scope="col">Hazır Olma saati</th>
+            <th scope="col">Teslim alma saati</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for gonderim in gonderimler %}
+                <tr>
+                <th scope="row">{{gonderim.id}}</th>
+                <td>{{gonderim.number}}</td>
+                <td>{{gonderim.malzeme}}</td>
+                <td>{{gonderim.adet}}</td>
+                <td>{{gonderim.palet}}</td>
+                <td>{{gonderim.irsaliye}}</td>
+                <td>{{gonderim.gun}}</td>
+                <td>{{gonderim.saat}}</td>
+                <td>{{gonderim.teslim}}</td>
+                <td><a href ="/edit/{{gonderim.id}}" class="btn btn-danger" >Güncelleme</a></td>
+              </tr>
+            {% endfor %}
+          
+        </tbody>
+      </table>
+    {% else %}
+    <div class="alert alert-danger"> Uygun Gönderim Bulunamadı.. </div>
+    {% endif %}
+{%endblock Body%} 

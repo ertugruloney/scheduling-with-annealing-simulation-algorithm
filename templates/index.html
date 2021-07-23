@@ -1,0 +1,14 @@
+{% extends "layoot.html" %}
+
+{%block Body%}  
+{% from "includes/_formhelpers.html" import render_field %}
+<form method="POST">
+    <dl>
+      {{ render_field(form.number) }}
+      
+      {{ render_field(form.password) }}
+      <button type="submit" class="">Giriş</button>
+    </dl>
+    
+  </form>
+{%endblock Body%}  

@@ -1,0 +1,18 @@
+{% extends "layootiki.html" %}
+
+{%block Body%}  
+
+{% from "includes/_formhelpers.html" import render_field %}
+<div class="container">
+<form method="POST">
+    
+    <dl>
+      {{ render_field(form.malzeme) }}{{ render_field(form.adet) }}{{ render_field(form.palet) }}{{ render_field(form.irsaliye) }}{{ render_field(form.gun) }}{{ render_field(form.saat) }}
+      
+      
+      <button type="submit" class="">Kaydet</button>
+    </dl>
+    
+  </form>
+</div>
+{%endblock Body%} 
