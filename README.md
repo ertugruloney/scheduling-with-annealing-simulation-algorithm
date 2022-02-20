@@ -2,7 +2,8 @@
 ## scheduling-with-annealing-simulation-algorithm
 
 ```
-Workshop type scheduling has been made to reduce the number of machines and cmax for a busy production site of a corporate company. 
+Workshop type scheduling has been made to reduce the number of machines and cmax for a busy production 
+site of a corporate company. 
 ```
 
 ### Project description
@@ -10,8 +11,8 @@ Workshop type scheduling has been made to reduce the number of machines and cmax
 The classic Workshop Scheduling (ATC) problem is the process of working on a machine cluster.
 
 it's about sorting. Flexible WorkshocScheduling (EATC) problem, The constraint that an operation can be processed on a machine in the problem of It is an expanded version due to its machinability on the machine. 
-EATC In the problem, each operation of each job can be processed on at least one machine. 
-in question.
+EATC In the problem, each operation of each job can be 
+processed on at least one machine. in question.
 In other words, there is an alternative machine selection for each operation (Kaya and Fığlalı, 2016).
 
 
@@ -146,7 +147,7 @@ end while
 Developed Algorithm has been implemented in MATLAB 9.4 version, and it has a 16-bit operating system with 2.70 Ghz Intel 7th generation operating system. 
 It is run on a computer with GB of RAM. To measure the algorithm proposed in this study, Fattahi et al. (2007) 20 problems created by him were solved.
 ```
-<img src="./images/resut.png" width=500>
+<img src="./images/resut.png" width=400>
 
 ```
 In the table, in the second column n is the number of jobs, h m represents the maximum number of machines that an operation can be processed among all operations, and m represents the number of machines. In the third column, suggested lower(ES) and upper(EXP) limits are given for each problem. The fourth column shows the completion time of the last operation of the lowest, last completed job that the algorithm (al orithma1) developed by Yazdani et al (2009) found for each problem.
