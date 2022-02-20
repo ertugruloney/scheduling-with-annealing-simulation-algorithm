@@ -21,7 +21,7 @@ In other words, there is an alternative machine selection for each operation (Ka
 ### Flow Chart of Annealing Simulated Algorithm
 
 
-<center><img src="./images/flowchart.png" width=300></center>
+<center><img src="./images/flowchart.png" width="300"></center>
 
 # SUGGESTED SOLUTION APPROACH
 
@@ -148,7 +148,7 @@ end while
 Developed Algorithm has been implemented in MATLAB 9.4 version, and it has a 16-bit operating system with 2.70 Ghz Intel 7th generation operating system. 
 It is run on a computer with GB of RAM. To measure the algorithm proposed in this study, Fattahi et al. (2007) 20 problems created by him were solved.
 ```
-<img src="./images/ret.png" width=300>
+<img src="./images/ret.png" width="300">
 
 ```
 In the table, in the second column n is the number of jobs, 
